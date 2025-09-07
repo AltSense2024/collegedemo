@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.M.E.S Women's Arts and Science College - AI Assistant Demo</title>
+    <meta name="description" content="Experience our intelligent chatbot assistant for M.M.E.S College admissions, courses, and information">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>M.M.E.S Women's Arts and Science College</h1>
+                <p>Excellence in Education Since 1918</p>
+            </div>
+            <nav class="nav">
+                <a href="#demo">Try Our AI Assistant</a>
+                <a href="#about">About College</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Meet Your AI College Assistant</h2>
+                <p>Get instant answers about courses, admissions, facilities, and more with our intelligent chatbot powered by advanced AI technology.</p>
+                <div class="demo-buttons">
+                    <button onclick="scrollToDemo()" class="btn-primary">Try It Now</button>
+                    <button onclick="showInfo()" class="btn-secondary">Learn More</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="college-preview">
+                    <h3>🎓 What You Can Ask:</h3>
+                    <ul>
+                        <li>💻 "What computer science courses do you offer?"</li>
+                        <li>📚 "Tell me about admission requirements"</li>
+                        <li>🏢 "Where is the college located?"</li>
+                        <li>💰 "What are the fee structures?"</li>
+                        <li>🎯 "What career opportunities are available?"</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="demo-section">
+        <div class="container">
+            <h2>🤖 Interactive AI Assistant Demo</h2>
+            <p class="demo-subtitle">Click the chat widget in the bottom-right corner to start a conversation!</p>
+            
+            <div class="demo-features">
+                <div class="feature">
+                    <h3>🎓 Course Information</h3>
+                    <p>Get detailed information about undergraduate and postgraduate programs</p>
+                </div>
+                <div class="feature">
+                    <h3>📋 Admission Guidance</h3>
+                    <p>Learn about admission procedures, eligibility, and important dates</p>
+                </div>
+                <div class="feature">
+                    <h3>💬 Instant Responses</h3>
+                    <p>Powered by AI with memory - maintains conversation context</p>
+                </div>
+                <div class="feature">
+                    <h3>📞 Lead Collection</h3>
+                    <p>Smart contact form appears when you need personalized assistance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2>About M.M.E.S Women's Arts and Science College</h2>
+                <div class="college-info">
+                    <div class="info-card">
+                        <h3>📅 Established</h3>
+                        <p>1918 - Over 100 years of educational excellence</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>🎯 Mission</h3>
+                        <p>Empowering women through quality education and holistic development</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>🏆 Recognition</h3>
+                        <p>Affiliated with University of Kerala, recognized by UGC</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>📚 Programs</h3>
+                        <p>UG & PG courses in Arts, Science, Commerce, and Computer Applications</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h3>📍 Address</h3>
+                    <p>M.M.E.S Women's Arts and Science College<br>
+                    Maliankara, Ernakulam District<br>
+                    Kerala, India</p>
+                </div>
+                <div class="contact-card">
+                    <h3>📞 Phone</h3>
+                    <p>+91 99628 90990</p>
+                </div>
+                <div class="contact-card">
+                    <h3>✉️ Email</h3>
+                    <p>info@mmescollege.org</p>
+                </div>
+                <div class="contact-card">
+                    <h3>🌐 Website</h3>
+                    <p><a href="http://mmescollege.org" target="_blank">mmescollege.org</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 M.M.E.S Women's Arts and Science College. All rights reserved.</p>
+            <p>AI Assistant Demo - Powered by Advanced Conversational AI Technology</p>
+        </div>
+    </footer>
+
+    <!-- Include Your Working Chatbot Widget -->
+    <script src="https://altsense-mmes.hf.space/file=widget.js"></script>
+
+    <!-- Demo Page JavaScript -->
+    <script>
+        function scrollToDemo() {
+            document.getElementById('demo').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function showInfo() {
+            document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Add some interactive animations
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

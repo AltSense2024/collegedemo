@@ -11,7 +11,7 @@ st.set_page_config(
 
 # API Configuration - using environment variables for security
 HF_TOKEN = st.secrets.get("HF_TOKEN", os.getenv("HF_TOKEN"))
-HF_SPACE_URL = st.secrets.get("HF_SPACE_URL", "https://your-private-space.hf.space")
+HF_SPACE_URL = st.secrets.get("HF_SPACE_URL")
 
 def call_private_ai_api(message, chat_history=[]):
     """Call your private Hugging Face Space API securely"""
